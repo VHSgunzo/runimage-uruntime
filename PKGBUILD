@@ -14,8 +14,8 @@ source=("$url/releases/download/v$pkgver/uruntime-runimage-${CARCH}")
 sha256sums=('SKIP')
 
 package() {
-  install -Dm755 "uruntime-runimage-${CARCH}" "${pkgdir}/var/RunDir/static/uruntime"
+  install -Dm755 "uruntime-runimage-${CARCH}" "${pkgdir}/var/RunDir/sharun/bin/uruntime"
   for bin in {dwarfs,dwarfsck,mkdwarfs,dwarfsextract,mksquashfs,unsquashfs,squashfuse}
-    do ln -sfr "${pkgdir}/var/RunDir/static/uruntime" "${pkgdir}/var/RunDir/static/$bin"
+    do ln -sfr "${pkgdir}/var/RunDir/sharun/bin/uruntime" "${pkgdir}/var/RunDir/sharun/bin/$bin"
   done
 }
