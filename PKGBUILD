@@ -1,7 +1,7 @@
 # Maintainer: VHSgunzo <vhsgunzo.github.io>
 
 pkgname='runimage-uruntime'
-pkgver='0.3.6'
+pkgver='0.3.9'
 pkgrel='1'
 pkgdesc='uruntime for RunImage container'
 url='https://github.com/VHSgunzo/uruntime'
